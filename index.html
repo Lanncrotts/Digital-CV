@@ -33,7 +33,7 @@
 <body>
     <header id="top">
         <section id="header-section">
-            <div id="center-heading">
+            <div>
                 <img 
                     src="images/me.jpg" 
                     alt="Picture of Lexi Crotts" 
@@ -43,11 +43,11 @@
             <h1>Lexi Crotts</h1>
             </div>
 
-            <div class="info-container">
+            <div id="contact-section">
             <!--contact info section-->
-                <p class="inline-p">Email: <a href="mailto:lanncrotts@gmail.com" target="_blank"> lanncrotts@gmail.com</a></p>
-                <p class="inline-p">Phone:<a href="tel:+8644940691">864-494-0691</a></p>
-                <p class="inline-p">LinkedIn: <a href="https://www.linkedin.com/in/lexi-crotts-874368192/" target="_blank">Click Here</a></p>
+                <p class="contact-p">Email: <a href="mailto:lanncrotts@gmail.com" target="_blank"> lanncrotts@gmail.com</a></p>
+                <p class="contact-p">Phone:<a href="tel:+8644940691">864-494-0691</a></p>
+                <p class="contact-p">LinkedIn: <a href="https://www.linkedin.com/in/lexi-crotts-874368192/" target="_blank">Click Here</a></p>
             </div>
             <!--GitHub can be added once we get there-->
         </section>    
@@ -56,13 +56,13 @@
 
     <main>
 
-        <section class="box">
+        <section class="body-section">
             <!--summary section-->
             <h2>Summary</h2>
-            <p class="indent">Asset Protection Associate with experience in loss prevention, safety and computer-related tasks, now transitioning into a career in software development. Currently building a strong foundation in front-end software engineering through Springboard's Software Development Career Track. Passionate about creating user-friendly web pages and using skills to bring a positive change to the modern digital experience.</p>
+            <p class="paragraph">Asset Protection Associate with experience in loss prevention, safety and computer-related tasks, now transitioning into a career in software development. Currently building a strong foundation in front-end software engineering through Springboard's Software Development Career Track. Passionate about creating user-friendly web pages and using skills to bring a positive change to the modern digital experience.</p>
         </section>
 
-        <section class="box">
+        <section class="body-section">
             <!--education section-->
             <h2>Education</h2>
             <ul>
@@ -90,7 +90,7 @@
             </ul>
         </section>
 
-        <section class="box">
+        <section class="body-section">
             <!--skills section-->
             <h2>Skills</h2>
             <!--Changed this from just listing the skills, to my proficiency in them. Proficiency will change as I progress through the course.-->
@@ -159,7 +159,7 @@
             </div>
         </section>
             
-        <section class="box">
+        <section class="body-section">
             <!--achievements section-->
             <h2>Achievements</h2>
             <ol>
@@ -169,17 +169,17 @@
             </ol>
         </section>
 
-        <section class="box">
+        <section class="body-section">
             <!--work experience section-->
             <h2>Projects</h2>
             
             <div>
-                <h3><a href="https://lanncrotts.github.io/Digital-CV/" target="_blank">Digital CV</a></h3>
+                <h3><a href="https://lanncrotts.github.io/Digital-CV/ " target="_blank">Digital CV</a></h3>
                 <img 
                     src="images/project1.png" 
                     alt="screenshot of Digital CV Project webpage" height="200"
-                    id="project1">
-                <p class="indent">This project is a personal digital CV created using HTML and beginner CSS to showcase my skills and experience to potential employers. It served as a practical exercise to demonstrate my newly acquired HTML knowledge, along with my ability to apply basic CSS for styling. I used CSS to add structure, improve readability, and enhance the visual presentation of clean and accessible web content built from scratch.</p>
+                    id="cv-project">
+                <p class="paragraph">This project is a personal digital CV created using HTML and beginner CSS to showcase my skills and experience to potential employers. It served as a practical exercise to demonstrate my newly acquired HTML knowledge, along with my ability to apply basic CSS for styling. I used CSS to add structure, improve readability, and enhance the visual presentation of clean and accessible web content built from scratch.</p>
                 <!--add more projects from Springboard as they are completed-->
             </div>
         </section>
@@ -192,7 +192,7 @@
         <section>
             
             <h2 id="contact-me">Contact Me</h2>
-            <form class="center-form" action="#">
+            <form class="contactme-form" action="#">
                 <div>
                     <label for="name">Name:</label>
                         <input 
@@ -248,24 +248,24 @@
                     <p>Preferred Method of Contact (Select all that Apply):</p>
                 </div>
 
-                <div id="method">
+                <div id="contact-method">
                     <input 
                         type="checkbox"
                         id="contact-email" 
                         name="email"> 
-                    <label for="contact-email" class="checkbox">Email</label>
+                    <label for="contact-email" class="contact-checkbox">Email</label>
                      
                      <input 
                         type="checkbox"
                         id="contact-call" 
                         name="call">
-                    <label for="contact-call" class="checkbox">Call</label> 
+                    <label for="contact-call" class="contact-checkbox">Call</label> 
               
                     <input 
                         type="checkbox"
                         id="contact-text" 
                         name="text">
-                    <label for="contact-text" class="checkbox">Text</label>
+                    <label for="contact-text" class="contact-checkbox">Text</label>
                 </div>
                 <br>
                 <div>
