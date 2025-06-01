@@ -56,16 +56,16 @@ a:hover {
 
 
 /* Layout Styling*/
-.indent {
+.paragraph {
     text-indent: 35px;
 }
 
-.inline-p {
+.contact-p {
     margin: 0;
     text-align: center;
 }
 
-.info-container {
+#contact-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +75,7 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.box {
+.body-section {
     border-bottom: 1px solid hsl(210, 10%, 35%);
     padding: 10px;
     margin: 10px;
@@ -155,7 +155,7 @@ th, td {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#project1 {
+#cv-project {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
 }
@@ -170,15 +170,15 @@ textarea:hover {
     background-color: hsl(214, 6%, 76%);
 }
 
-.checkbox:hover {
+.contact-checkbox:hover {
     color: rgb(31, 119, 197);
 } 
 
-.center-form {
+.contactme-form {
     text-align: center;
 }
 
-#method {
+#contact-method {
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -188,4 +188,5 @@ textarea:hover {
 button:hover {
     background-color: rgb(31, 119, 197);
 }
+
 
