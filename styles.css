@@ -9,7 +9,7 @@ body {
     font-family: "DM Serif Text", serif;
     background-color: hsl(209, 54%, 88%);
     line-height: 1.5rem;
-    padding: 5px 12vw;
+    padding: 5px 10%;
     border: 2px solid hsl(210, 10%, 35%);
     margin: 30px
     /* i chose a font that wasn't too crazy but still maintained professionalism */
