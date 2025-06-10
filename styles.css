@@ -1,18 +1,18 @@
+/* applying the property universally */
 * {
     box-sizing: border-box;
 }
 
+/* text styling */
 
-
-/* Text Styling */
 body {
     font-family: "DM Serif Text", serif;
     background-color: hsl(209, 54%, 88%);
     line-height: 1.5rem;
-    padding: 5px 10%;
+    padding: 10px 1%;
     border: 2px solid hsl(210, 10%, 35%);
-    margin: 30px
-    /* i chose a font that wasn't too crazy but still maintained professionalism */
+    margin: 30px;
+    /* Chose a professional, readable serif font */
 }
 
 h1, h2, h3 {
@@ -44,7 +44,7 @@ a {
     color: hsl(210, 40%, 45%);
     font-family: "Roboto Condensed";
     text-decoration: none;
-    /* wanted to use a slightly different font for the links to make them stand out. also removed the line from the links */
+    /* Different font and no underline to distinguish links */
 }
 
 a:hover {
@@ -52,31 +52,18 @@ a:hover {
     text-decoration: underline;
 }
 
+/* layout and display styling */
 
-
-
-/* Layout Styling*/
 .paragraph {
     text-indent: 35px;
 }
 
-.contact-p {
-    margin: 0;
-    text-align: center;
-}
-
-#contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    max-width: 80vw;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-.body-section {
-    border-bottom: 1px solid hsl(210, 10%, 35%);
+.body-section,
+.skills-section,
+#summary-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin: 10px;
     line-height: 1.5rem;
@@ -89,31 +76,52 @@ footer {
     border: 2px solid hsl(210, 10%, 35%);
     font-size: 14px;
     color: hsl(210, 10%, 25%);
-    /* text-align: center; */
     width: 550px;
     margin: 0 auto;
+    /* Centered footer with border and background */
 }
 
-#header-section {
-    border-bottom: 3px solid hsl(210, 10%, 35%);
-    padding: 0 10px 5px 10px;
-    margin-bottom: 10px;
-}
-
-#copyright {
-    text-align: center;
-}
-
+#copyright,
 #contact-me {
     text-align: center;
 }
 
+#header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 20rem;
+}
 
+#header-section #profile-image {
+    align-self: flex-start;
+    width: 13em;
+    height: 13em;
+}
 
+#header-section #my-name {
+    text-align: center;
+    line-height: 2.5rem;
+    flex: 1;
+}
 
+#header-section #contact-info {
+    align-self: flex-end;
+}
 
-/* Table Styling */
-#table {
+.skills-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills-section div {
+    align-self: flex-start;
+}
+
+/* table styling */
+
+.table-wrapper {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -122,8 +130,8 @@ footer {
 table {
     border-collapse: collapse;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: hsl(210, 19%, 54%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: hsl(0, 2%, 91%);
     font-size: 20px;
 }
@@ -131,38 +139,34 @@ table {
 th, td {
     border: 1px solid hsl(210, 10%, 20%);
     padding: 12px 16px;
+    text-align: center;
 }
 
 .table-head {
-    text-align: center;
     text-decoration: underline;
     width: 200px;
 }
 
-.table-cell {
-    text-align: center;
-}
+/* image styling */
 
-
-
-/* IMAGES */
 #profile-pic {
     border: 4px solid rgb(83, 82, 82);
     border-radius: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 20%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #cv-project {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* form styling */
 
-
-/* Form Styling */
 input:focus,
 input:hover,
 select:hover,
@@ -172,21 +176,27 @@ textarea:hover {
 
 .contact-checkbox:hover {
     color: rgb(31, 119, 197);
-} 
+}
 
-.contactme-form {
-    text-align: center;
+.contactme-form > div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #contact-method {
     display: flex;
-    justify-content: center; 
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    gap: 15px; 
+    gap: 15px;
 }
 
 button:hover {
     background-color: rgb(31, 119, 197);
 }
-
 
