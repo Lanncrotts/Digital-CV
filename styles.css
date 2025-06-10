@@ -160,7 +160,7 @@ th, td {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#cv-project {
+#cv-project-image {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -199,4 +199,17 @@ textarea:hover {
 button:hover {
     background-color: rgb(31, 119, 197);
 }
+
+/* project styling */
+
+.body-section .project {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+ 
+/* this will end up applying to all projects added in so that the paragraph is beside the image! unsure if i want to add some kind of border or hr to separate the projecs or if they will remain as is */
 
