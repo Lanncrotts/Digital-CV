@@ -29,34 +29,38 @@
         rel="preconnect" 
         href="https://fonts.gstatic.com" 
         crossorigin>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-    <header id="top">
+    <header>
         <section id="header-section">
-            <div>
+            <div id="profile-image">
                 <img 
                     src="images/me.jpg" 
                     alt="Picture of Lexi Crotts" 
                     height="250"
                     id="profile-pic">
-            
-            <h1>Lexi Crotts</h1>
+            </div>  
+            <div id="my-name"> 
+                <h1>Lexi Crotts</h1>
             </div>
-
-            <div id="contact-section">
-            <!--contact info section-->
-                <p class="contact-p">Email: <a href="mailto:lanncrotts@gmail.com" target="_blank"> lanncrotts@gmail.com</a></p>
-                <p class="contact-p">Phone:<a href="tel:+8644940691">864-494-0691</a></p>
-                <p class="contact-p">LinkedIn: <a href="https://www.linkedin.com/in/lexi-crotts-874368192/" target="_blank">Click Here</a></p>
+            <div id="contact-info">
+                <!--contact info section-->
+                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:lanncrotts@gmail.com" target="_blank"> lanncrotts@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i>Phone:<a href="tel:+8644940691">864-494-0691</a></p>
+                <p><i class="fab fa-linkedin"></i>LinkedIn: <a href="https://www.linkedin.com/in/lexi-crotts-874368192/" target="_blank">Click Here</a></p>
+                <!--GitHub can be added once we get there-->
             </div>
-            <!--GitHub can be added once we get there-->
         </section>    
     </header>
     
 
     <main>
 
-        <section class="body-section">
+        <section id="summary-section">
             <!--summary section-->
             <h2>Summary</h2>
             <p class="paragraph">Asset Protection Associate with experience in loss prevention, safety and computer-related tasks, now transitioning into a career in software development. Currently building a strong foundation in front-end software engineering through Springboard's Software Development Career Track. Passionate about creating user-friendly web pages and using skills to bring a positive change to the modern digital experience.</p>
@@ -96,7 +100,7 @@
             <!--Changed this from just listing the skills, to my proficiency in them. Proficiency will change as I progress through the course.-->
             <div>
             <h3>Web Development</h3>
-                <div id="table">
+                <div class="table-wrapper">
                 <table>
                     <thead>
                         <tr>
@@ -129,9 +133,12 @@
                 </table>
                 </div>
             </div>
+        </section>
 
+        <section class="skills-section">
             <div>
-            <h3>Technology</h3>
+                <!-- took out class="technology-div" (unneeded)-->
+                <h3>Technology</h3>
                 <ul>
                     <li>Microsoft Office</li>
                     <li>Average Typing Speed: 65 WPM</li>
@@ -139,7 +146,8 @@
             </div>
 
             <div>
-            <h3>Math</h3>
+                <!-- removed class="math-skills"(unneeded) -->
+                <h3>Math</h3>
                 <ul>
                     <li>Algebra</li>
                     <li>Calculus 1, 2, and 3</li>
@@ -148,7 +156,8 @@
             </div>
 
             <div>
-            <h3>Soft Skills</h3>
+                <!-- removed class="soft-skills" (unneeded)-->
+                <h3>Soft Skills</h3>
                 <ul>
                     <li>Verbal and Written Communication</li>
                     <li>Conflict Resolution</li>
@@ -179,7 +188,7 @@
                     src="images/project1.png" 
                     alt="screenshot of Digital CV Project webpage" height="200"
                     id="cv-project">
-                <p class="paragraph">This project is a personal digital CV created using HTML and beginner CSS to showcase my skills and experience to potential employers. It served as a practical exercise to demonstrate my newly acquired HTML knowledge, along with my ability to apply basic CSS for styling. I used CSS to add structure, improve readability, and enhance the visual presentation of clean and accessible web content built from scratch.</p>
+                <p class="paragraph">This project is a personal digital CV created using HTML and CSS to showcase my skills and experience to potential employers. It served as a practical exercise to demonstrate my newly acquired HTML knowledge, along with my ability to apply basic CSS for styling. I used CSS to add structure, improve readability, and enhance the visual presentation of clean and accessible web content built from scratch.</p>
                 <!--add more projects from Springboard as they are completed-->
             </div>
         </section>
