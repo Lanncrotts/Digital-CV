@@ -36,18 +36,18 @@
 </head>
 <body>
     <header>
-        <section id="header-section">
-            <div id="profile-image">
+        <section class="header-section">
+            <div class="profile-pic-container">
                 <img 
-                    src="images/me.jpg" 
+                    src="images/profile-pic.jpg" 
                     alt="Picture of Lexi Crotts" 
                     height="250"
-                    id="profile-pic">
+                    class="profile-pic">
             </div>  
-            <div id="my-name"> 
+            <div class="name-container"> 
                 <h1>Lexi Crotts</h1>
             </div>
-            <div id="contact-info">
+            <div class="contact-info-container">
                 <!--contact info section-->
                 <p><i class="fas fa-envelope"></i>Email: <a href="mailto:lanncrotts@gmail.com" target="_blank"> lanncrotts@gmail.com</a></p>
                 <p><i class="fas fa-phone"></i>Phone:<a href="tel:+8644940691">864-494-0691</a></p>
@@ -60,7 +60,7 @@
 
     <main>
 
-        <section id="summary-section">
+        <section class="summary-section">
             <!--summary section-->
             <h2>Summary</h2>
             <p class="paragraph">Asset Protection Associate with experience in loss prevention, safety and computer-related tasks, now transitioning into a career in software development. Currently building a strong foundation in front-end software engineering through Springboard's Software Development Career Track. Passionate about creating user-friendly web pages and using skills to bring a positive change to the modern digital experience.</p>
@@ -186,7 +186,7 @@
                 <img 
                     src="images/project1.png" 
                     alt="screenshot of Digital CV Project webpage" height="200"
-                    id="cv-project-image">
+                    class="cv-project-image">
                 <p class="paragraph" id="cv-project-paragraph">This project is a personal digital CV created using HTML and CSS to showcase my skills and experience to potential employers. It served as a practical exercise to demonstrate my newly acquired HTML knowledge, along with my ability to apply basic CSS for styling. I used CSS to add structure, improve readability, and enhance the visual presentation of clean and accessible web content built from scratch.</p>
                 <!--add more projects from Springboard as they are completed-->
             </div>
@@ -199,7 +199,7 @@
         <!--contact-->
         <section>
             
-            <h2 id="contact-me">Contact Me</h2>
+            <h2 class="contact-form-header">Contact Me</h2>
             <form class="contactme-form" action="#">
                 <div>
                     <label for="name">Name:</label>
@@ -216,7 +216,7 @@
                         <input 
                             name="phone" 
                             type="text" 
-                            placeholder="Phone  Number" 
+                            placeholder="Phone Number" 
                             id="phone"
                             required>
                 </div>
@@ -257,23 +257,29 @@
                 </div>
 
                 <div id="contact-method">
-                    <input 
-                        type="checkbox"
-                        id="contact-email" 
-                        name="email"> 
-                    <label for="contact-email" class="contact-checkbox">Email</label>
+                    <label class="contact-checkbox">
+                        <input 
+                            type="checkbox"
+                            id="contact-email" 
+                            name="email"> 
+                        Email
+                    </label>
                      
-                     <input 
-                        type="checkbox"
-                        id="contact-call" 
-                        name="call">
-                    <label for="contact-call" class="contact-checkbox">Call</label> 
+                    <label class="contact-checkbox">
+                        <input 
+                            type="checkbox"
+                            id="contact-call" 
+                            name="Call"> 
+                        Call
+                    </label> 
               
-                    <input 
-                        type="checkbox"
-                        id="contact-text" 
-                        name="text">
-                    <label for="contact-text" class="contact-checkbox">Text</label>
+                    <label class="contact-checkbox">
+                        <input 
+                            type="checkbox"
+                            id="contact-text" 
+                            name="text"> 
+                        Text
+                    </label>
                 </div>
                 <br>
                 <div>
@@ -288,12 +294,14 @@
                         maxlength="1000" 
                         placeholder="Type message here."></textarea>
                 </div>
+                <div class="submit-buttons">
                     <button type="reset">Clear</button>
                     <button type="submit">Submit</button> 
+                </div>
             </form>
         </section>
 
-        <div id="copyright">
+        <div class="end">
             <p>
                 <small>Copyright &copy; 2025 Lexi Crotts</small>
             </p>
